@@ -177,8 +177,11 @@
               var fee = entry.value;
 
               DateTime now = DateTime.now();
-              DateTime date = DateTime.tryParse(fee["dueDate"]) ?? now;
+
+              DateTime date = DateFormat("d MMMM yyyy").parse(fee["dueDate"]);
+
               Color dueColor = date.isBefore(now) ? Colors.red : Colors.black;
+
 
               return Card(
                 color: lavender,
