@@ -1,16 +1,35 @@
-# my_first_app
+# SchoolDiary Payment Page
 
-A new Flutter project.
+This project includes a page for the SchoolDiary app that lets user(parent) view various fees due  for and paid by them.  
 
-## Getting Started
+# Software Details
+Flutter version: 3.32.3
+Dart version: 3.8.1
+Android SDK version 36.0.0
+version 2025.1.1
 
-This project is a starting point for a Flutter application.
+# pubs/dependencies
 
-A few resources to get you started if this is your first Flutter project:
+Intl package:-
+    Documentation:
+        https://pub.dev/packages/intl
+    Version: ^0.20.2
+    Purpose: To use the DateFormat class to work with different forms of dates.(Internationalization for Dart) .
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Path Provider:-
+    Documentation:
+        https://pub.dev/packages/path_provider
+    Version: ^2.1.5
+    Purpose: For finding commonly used locations on the filesystem.
+             Here using getApplicationDocumentsDirectory().
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Flutter Launcher Icon:-
+    Documentation:
+        https://pub.dev/packages/flutter_launcher_icons
+    Version: ^0.14.4
+    Purpose: To change the launcher icon
+
+# assets
+
+For JSON file:- "../assets/data.json"
+For launch icon:- "../assets/schooldiary.png"

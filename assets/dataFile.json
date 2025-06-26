@@ -32,7 +32,7 @@
         "nextPaymentDate": "2023-06-20T00:00:00Z",
         "paidStatus": "unPaid",
         "paid": false,
-        "paidOnDate": "",
+        "paidOnDate": "2023-06-20T00:00:00Z",
         "hasFeeModificationHistory": false,
         "feeType": "Transport",
         "feeTypes": "Transport",
@@ -90,7 +90,7 @@
         "nextPaymentDate": "2023-07-24T00:00:00Z",
         "paidStatus": "unPaid",
         "paid": false,
-        "paidOnDate": "",
+        "paidOnDate": "2023-07-24T00:00:00Z",
         "hasFeeModificationHistory": false,
         "feeType": "Tuition",
         "feeTypes": "Tuition",
@@ -192,6 +192,65 @@
         "feeType": "Admission",
         "feeTypes": "Admission",
         "amount": 17300
+      },
+      {
+        "nextPaymentDate": "2023-12-04T00:00:00Z",
+        "paidStatus": "unPaid",
+        "paid": true,
+        "paidOnDate": "2025-05-15T00:00:00Z",
+        "hasFeeModificationHistory": false,
+        "feeType": "Lab Fee",
+        "feeTypes": "Lab Fee",
+        "amount": 2000
+      },
+      {
+        "nextPaymentDate": "2023-06-20T00:00:00Z",
+        "paidStatus": "unPaid",
+        "paid": true,
+        "paidOnDate": "2025-05-15T00:00:00Z",
+        "hasFeeModificationHistory": false,
+        "feeType": "Annual Function Fee",
+        "feeTypes": "Annual Function Fee",
+        "amount": 1200
+      },
+      {
+        "nextPaymentDate": "2024-01-01T00:00:00Z",
+        "paidStatus": "Paid",
+        "paid": true,
+        "paidOnDate": "2023-12-31T00:00:00Z",
+        "hasFeeModificationHistory": false,
+        "feeType": "Maintenance Fee",
+        "feeTypes": "Maintenance Fee",
+        "amount": 500
+      },
+      {
+        "nextPaymentDate": "2023-08-29T00:00:00Z",
+        "paidStatus": "unPaid",
+        "paid": true,
+        "paidOnDate": "2025-05-15T00:00:00Z",
+        "hasFeeModificationHistory": false,
+        "feeType": "Sports Fee",
+        "feeTypes": "Sports Fee",
+        "amount": 2500
+      },
+      {
+        "nextPaymentDate": "2023-08-29T00:00:00Z",
+        "paidStatus": "unPaid",
+        "paid": true,
+        "paidOnDate": "2025-05-15T00:00:00Z",
+        "hasFeeModificationHistory": false,
+        "feeType": "Library Fee",
+        "feeTypes": "Library Fee",
+        "amount": 800
+      },
+      {
+        "nextPaymentDate": "2023-06-20T00:00:00Z",
+        "paidStatus": "Paid",
+        "paid": true,
+        "paidOnDate": "2023-05-15T00:00:00Z",
+        "hasFeeModificationHistory": false,
+        "feeType": "Examination Form Fee",
+        "amount": 1400
       }
     ],
     "academicYear": {
@@ -239,7 +298,7 @@
         "nextPaymentDate": "2024-09-09T00:00:00Z",
         "paidStatus": "Paid",
         "paid": false,
-        "paidOnDate": "",
+        "paidOnDate": "2024-09-09T00:00:00Z",
         "hasFeeModificationHistory": false,
         "feeType": "Transport",
         "feeTypes": "Transport",
@@ -337,12 +396,74 @@
         "nextPaymentDate": "2024-12-20T00:00:00Z",
         "paidStatus": "unPaid",
         "paid": true,
-        "paidOnDate": "",
+        "paidOnDate": "2024-12-20T00:00:00Z",
         "hasFeeModificationHistory": false,
         "feeType": "Admission",
         "feeTypes": "Admission",
         "amount": 15600
       },
+
+        {
+          "nextPaymentDate": "2024-04-10T00:00:00Z",
+          "paidStatus": "Paid",
+          "paid": true,
+          "paidOnDate": "2024-04-09T00:00:00Z",
+          "hasFeeModificationHistory": false,
+          "feeType": "Lab Fee",
+          "feeTypes": "Lab Fee",
+          "amount": 2100
+        },
+        {
+          "nextPaymentDate": "2024-06-15T00:00:00Z",
+          "paidStatus": "unPaid",
+          "paid": false,
+          "paidOnDate": "2024-06-15T00:00:00Z",
+          "hasFeeModificationHistory": false,
+          "feeType": "Annual Function Fee",
+          "feeTypes": "Annual Function Fee",
+          "amount": 1800
+        },
+        {
+          "nextPaymentDate": "2024-08-05T00:00:00Z",
+          "paidStatus": "Paid",
+          "paid": true,
+          "paidOnDate": "2024-08-03T00:00:00Z",
+          "hasFeeModificationHistory": false,
+          "feeType": "Maintenance Fee",
+          "feeTypes": "Maintenance Fee",
+          "amount": 750
+        },
+        {
+          "nextPaymentDate": "2024-09-25T00:00:00Z",
+          "paidStatus": "unPaid",
+          "paid": false,
+          "paidOnDate": "2024-09-25T00:00:00Z",
+          "hasFeeModificationHistory": false,
+          "feeType": "Sports Fee",
+          "feeTypes": "Sports Fee",
+          "amount": 2900
+        },
+        {
+          "nextPaymentDate": "2024-11-10T00:00:00Z",
+          "paidStatus": "Paid",
+          "paid": true,
+          "paidOnDate": "2024-11-08T00:00:00Z",
+          "hasFeeModificationHistory": false,
+          "feeType": "Library Fee",
+          "feeTypes": "Library Fee",
+          "amount": 950
+        },
+        {
+          "nextPaymentDate": "2025-01-20T00:00:00Z",
+          "paidStatus": "unPaid",
+          "paid": false,
+          "paidOnDate": "2025-01-20T00:00:00Z",
+          "hasFeeModificationHistory": false,
+          "feeType": "Examination Form Fee",
+          "feeTypes": "Examination Form Fee",
+          "amount": 1700
+        },
+
       {
         "citrusPayUFonyFlatCharge": 0,
         "atomPayUFonyFlatCharge": 0,
@@ -549,6 +670,67 @@
         "feeTypes": "Admission",
         "amount": 16500
       },
+      {
+          "nextPaymentDate": "2025-04-15T00:00:00Z",
+          "paidStatus": "Paid",
+          "paid": true,
+          "paidOnDate": "2025-04-14T00:00:00Z",
+          "hasFeeModificationHistory": false,
+          "feeType": "Lab Fee",
+          "feeTypes": "Lab Fee",
+          "amount": 2300
+        },
+        {
+          "nextPaymentDate": "2025-06-30T00:00:00Z",
+          "paidStatus": "unPaid",
+          "paid": false,
+          "paidOnDate": "2025-06-30T00:00:00Z",
+          "hasFeeModificationHistory": false,
+          "feeType": "Annual Function Fee",
+          "feeTypes": "Annual Function Fee",
+          "amount": 1600
+        },
+        {
+          "nextPaymentDate": "2025-07-25T00:00:00Z",
+          "paidStatus": "Paid",
+          "paid": true,
+          "paidOnDate": "2025-06-25T00:00:00Z",
+          "hasFeeModificationHistory": false,
+          "feeType": "Maintenance Fee",
+          "feeTypes": "Maintenance Fee",
+          "amount": 800
+        },
+        {
+          "nextPaymentDate": "2025-09-10T00:00:00Z",
+          "paidStatus": "unPaid",
+          "paid": false,
+          "paidOnDate": "2025-09-10T00:00:00Z",
+          "hasFeeModificationHistory": false,
+          "feeType": "Sports Fee",
+          "feeTypes": "Sports Fee",
+          "amount": 3100
+        },
+        {
+          "nextPaymentDate": "2025-11-15T00:00:00Z",
+          "paidStatus": "Paid",
+          "paid": true,
+          "paidOnDate": "2025-06-01T00:00:00Z",
+          "hasFeeModificationHistory": false,
+          "feeType": "Library Fee",
+          "feeTypes": "Library Fee",
+          "amount": 1000
+        },
+        {
+          "nextPaymentDate": "2026-02-05T00:00:00Z",
+          "paidStatus": "unPaid",
+          "paid": false,
+          "paidOnDate": "2026-02-05T00:00:00Z",
+          "hasFeeModificationHistory": false,
+          "feeType": "Examination Form Fee",
+          "feeTypes": "Examination Form Fee",
+          "amount": 1900
+        },
+
       {
         "citrusPayUFonyFlatCharge": 0,
         "atomPayUFonyFlatCharge": 0,
