@@ -6,6 +6,14 @@
   import 'package:flutter/services.dart' show rootBundle;
   import 'package:path_provider/path_provider.dart'; // Import the path_provider package for file operations like getting the application's documents directory.
 
+
+
+
+  // 1. VIEW MODEL is missing
+  // 2. model classes for data storing is missing
+  // 3. date and time and currency in local gmt of device
+  // 4. font weight and size and color needs to be statically typed
+  // 5. move function written in main ui screen
   void main() {
     runApp(MaterialApp(
       home: FeeScreen(),
@@ -164,8 +172,8 @@
                     child: Text(year,
                       style: const TextStyle(
                         fontWeight: FontWeight.w600,
-                        fontSize: 20,
-                        color: Color(0xFFFFFFFF),
+                        fontSize: 20,//medium header font  = 20 -> medium_font
+                        color: Color(0xFFFFFFFF),// menu bar color = Color.Black
                       )),
                   ),
                 ),
@@ -180,7 +188,7 @@
         body: SingleChildScrollView(
           padding: const EdgeInsets.all(16),
           child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            const Text("Due", style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500)),
+            const Text("Due", style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500)),//font size
             const SizedBox(height: 10),
             ...feesDue.asMap().entries.map((entry) { // Iterate through the feesDue list and create a card for each item and asMap() is used to get the index of the entry.
               int index = entry.key;// 'index' is the index of the current entry in the list.
@@ -188,8 +196,8 @@
 
               // Calculate the due color based on the due date.
               DateTime now = DateTime.now();
-              DateTime date = DateFormat("d MMM yyyy").parse(fee["dueDate"]);
-              Color dueColor = date.isBefore(now) ? Color(0xFFBD1C0D) : Colors.black;
+              DateTime date = DateFormat("d MMM yyyy").parse(fee["dueDate"]);// local GMT or device gmt setting parse
+              Color dueColor = date.isBefore(now) ? Color(0xFFBD1C0D) : Colors.black;//color should be statically
 
 
               return InkWell( // InkWell is used to handle tap events on the card.
@@ -218,8 +226,8 @@
                         });
                       },
                     ),
-                    title: Text('₹ ${fee["amount"]}',
-                        style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+                    title: Text('₹ ${fee["amount"]}',// currency based in local device setting , Locale -> en-US
+                        style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),//main_header_weight_text = FontWeight.Bold
                     subtitle: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
