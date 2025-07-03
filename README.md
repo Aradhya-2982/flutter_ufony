@@ -3,17 +3,17 @@
 This project includes a page for the SchoolDiary app that lets user(parent) view various fees due for and paid by them.\
 This project is build on MVVM architecture with:
 > Data layer/Model
-## 1.`academic_year_model`:
+### 1.`academic_year_model`:
 contains the dart model of **academic year** field of JSON file.\
 Also includes `PaymentModel`.
-## 2.`payment_model`:
+### 2.`payment_model`:
 contains the dart model of payment field of JSON file.
 > Presentation layer/View
-## UI Layer: `fee_screen`
+### UI Layer: `fee_screen`
 > Business logic layer/ViewModel
-## 1.`fee_view_model`
-## 2.`due_fee_view_model`
-## 3.`paid_fee_view_model`
+### 1.`fee_view_model`
+### 2.`due_fee_view_model`
+### 3.`paid_fee_view_model`
 
 
 # Software Details
