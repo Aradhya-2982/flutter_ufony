@@ -40,11 +40,26 @@ class FeeViewModel extends ChangeNotifier {
       _data = decoded.map((e) => AcademicYearModel.fromJson(e)).toList();
       _academicYears = _data.map((e) => e.label).toSet().toList();
 
-      _selectedYear = _academicYears.isNotEmpty ? _academicYears.first : null;
+      _selectedYear = getCurrentAcademicYear();
       if (_selectedYear != null) filterByYear(_selectedYear!);
     } catch (e) {
       debugPrint("Error loading data: $e");
     }
+  }
+  String getCurrentAcademicYear() {
+    DateTime now = DateTime.now();
+    int startYear;
+    int endYear;
+
+    if (now.month >= 4) {
+      startYear = now.year;
+      endYear = (now.year + 1) % 100;
+    } else {
+      startYear = now.year - 1;
+      endYear = now.year % 100;
+    }
+
+    return '$startYear-${endYear.toString().padLeft(2, '0')}';
   }
 
   void filterByYear(String year) {
