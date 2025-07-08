@@ -47,16 +47,24 @@ class FeeScreen extends StatelessWidget {
                 ),
                 onSelected: (year) => feeViewModel.filterByYear(year),
                 itemBuilder: (context) => feeViewModel.academicYears
-                    .map((year) => PopupMenuItem(
-                  value: year,
-                  child: SizedBox(
-                    width: 80,
-                    height: 50,
-                    child: Center(
-                      child: Constants.calenderIconList(text: year),
-                    ),
-                  ),
-                )).toList(),
+                    .map((year){
+                      final isSelected = year == feeViewModel.selectedYear;
+                      return PopupMenuItem(
+                          value: year,
+                          padding: const EdgeInsets.all(0),
+                          child: Container(
+                            width: double.infinity,
+                            height: 45,
+                            decoration: BoxDecoration(
+                            color: isSelected ? Color(0xFF434141): Colors.transparent,
+                          ),
+                          alignment: Alignment.center,
+                          child: Center(
+                            child: Constants.calenderIconList(text: year),
+                          ),
+                        ),
+                      );
+                }).toList(),
               ),
               Icon(Icons.more_vert, color: Constants.appbarIconColor),
               SizedBox(width: Constants.boxGap),
